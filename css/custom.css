@@ -1,0 +1,448 @@
+@font-face {
+    font-family: 'Oswald';
+    src:  url('../fonts/oswald/Oswald-ExtraLight.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+@font-face {
+font-family: 'Oswald';
+src:  url('../fonts/oswald/Oswald-Light.ttf') format('truetype');
+font-weight: 200;
+font-style: normal;
+}
+@font-face {
+font-family: 'Oswald';
+src:  url('../fonts/oswald/Oswald-Regular.ttf') format('truetype');
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+font-family: 'Oswald';
+src:  url('../fonts/oswald/Oswald-Medium.ttf') format('truetype');
+font-weight: 600;
+font-style: normal;
+}
+@font-face {
+font-family: 'Oswald';
+src:  url('../fonts/oswald/Oswald-SemiBold.ttf') format('truetype');
+font-weight: 800;
+font-style: normal;
+}
+@font-face {
+font-family: 'Oswald';
+src:  url('../fonts/oswald/Oswald-Bold.ttf') format('truetype');
+font-weight: 1000;
+font-style: normal;
+}
+
+
+.sec2 {
+    height: 100vh;
+    background: url("../img/revmap.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 9;
+    /* margin-top: -40px; */
+}
+.hanging {
+    position: absolute;
+    top: 10vw;  
+    left: 11vw;
+    z-index: 30;    
+}
+.hanging img {
+    width: 25vw !important;
+}
+.revMapGradient {
+    position: relative;
+}
+.revMapGradient {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(0,0,0,.63) 0%, rgba(0,0,0,.04) 100%);
+}
+.revWarSoldier {
+    height: 100vh;
+    width: 100vw;
+    background: url("../img/revWarSoldier.png") right;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    top: -100vh;
+    opacity: .77;
+}
+.cannon {
+    float: right;
+    margin-top: -128vh;
+    position: relative;
+    z-index: 3;
+}
+.cannon img {
+    width: 45vw;
+    height: 36vh;
+}
+.sec2BlueMask {
+    background: #052846 ;
+    opacity: .77;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 3;
+    top: -200vh;
+}
+
+.paperStrip {
+    z-index: 25;
+    position: absolute;
+    left: 0;
+    bottom: -18vh;
+}
+
+.paperStripTextRow {
+    padding: 4vw 4vw 4vw 1vw;
+}
+
+.paperStripText {
+    position: absolute;
+    color: #052846;
+    font-family: 'Oswald';
+}
+
+.paperStripText .exploreBy {
+    text-transform: uppercase;
+    font-size: 1.75vw;
+    margin-top: 2vw;
+    text-align: left;
+    padding-left: 6vw;
+}
+
+.paperStripText .era  {
+    font-size: 12vw;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: -4.5vw;
+}
+
+.paperStripText .col:nth-child(3) {
+    font-size: 1vw;
+    font-weight: 300;
+    text-align: left;
+    line-height: 2vw;
+}
+
+.paperStrip img {
+    width: 65vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .paperStrip img {
+        width: 95vw;
+    }
+    .paperStripText .exploreBy {
+        font-size: 1.75vw;
+        margin-top: 2vw;
+        padding-left: 6vw;
+    }
+    
+    .paperStripText .era  {
+        font-size: 12vw;
+        margin-top: -4.5vw;
+    }
+    
+    .paperStripText .col:nth-child(3) {
+        font-size: 2vw;
+        line-height: 3vw;
+        padding: 2vw 4vw 1vw 1vw;   
+    }
+  }
+
+.sec1 {
+    height: 100vh;
+    background: url("../img/andrepasscopy.png") no-repeat center;
+    background-size: cover;
+    margin-top: 27px;
+    z-index: 10;
+}
+.moving-angle {
+    height: 100%;
+    /* background: #052846; */
+    border-top: 100vh solid #052846;
+    border-left: 0px solid transparent;
+    border-right: 20vw solid transparent;
+    width: 50vw;
+    opacity: 25%;
+    filter: drop-shadow(12px 6px 8px rgba(0,0,0,0.5));
+    position: absolute;
+    z-index: 1;
+    animation: slide 30s linear infinite;
+}
+
+  @keyframes slide {
+    0%, 100% {
+        width: 50vw;
+    }
+    50% {
+        width: 70vw;
+    }
+  }
+
+.gwCrossing {
+    position: absolute;
+    top: 47vh;
+    z-index: 2;
+}
+
+.gwCrossing img {
+    height: 30vh;
+}
+.flag {
+    position: absolute;
+    top: 24vh;
+    z-index: 3;
+}
+
+.flag img {
+    height: 39vh;
+}
+.benedict {
+    position: relative;
+    float: left;
+    z-index: 4;
+}
+
+.benedict img {
+    height: 100vh;
+}
+
+.text {
+    position: absolute;
+    z-index: 5;
+    font-family: 'Oswald';
+    margin-top: 13vh;
+    text-align: left;
+    margin-left: 13vw;
+}
+
+.text span {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.text span:nth-child(1) {
+    color: #052846;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 18vw;
+    z-index: 10;
+}
+.text span:nth-child(2) {
+    color: #a81e1b;
+    font-size: 18vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: -10px;
+    z-index: 9;
+    line-height: 15vw;
+}
+.text span:nth-child(3) {
+    font-family: 'Times New Roman', Times, serif;
+    color: #052846;
+    font-size: 5vw;
+    font-weight: 400;
+    text-align: right;
+    margin-top: -3vw;
+    font-style: italic;
+    z-index: 10;
+    padding-right: 8vw;
+}
+
+.sec1footer {
+    right: 40px;
+    position: absolute;
+    bottom: 40px;
+    z-index: 5;
+}
+
+.sec1footer img {
+    width: 50%;
+    margin-left: auto;
+}
+
+.sec1footer span{
+    color: #61838e;
+    font-size: 1.25em;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-title {
+    font-family: 'Oswald','Franklin Gothic Medium Condensed',sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    color: #000000;
+}
+
+/*  Navigation 
+    https://codepen.io/plavookac/pen/qomrMw?editors=1100
+*/
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.mobile-nav {
+
+}
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color: #FC466B;
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 60px;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    right: 18px;
+    width: 250px;
+    margin-top: 4px;
+    transform: translateX(251px);
+    transition: transform 250ms ease-in-out;
+    background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
+    z-index: 100;
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(1px);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    width: 22px;
+    float: right;
+    margin-top: -60px;
+    margin-right: 25px;
+}
+
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    /* background-color: #8e8e8e;
+    transition: color .15s ease-in-out; */
+}
+/* .spinner:hover {
+    background-color: #ffffff;
+} */
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
